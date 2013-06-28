@@ -1,0 +1,4 @@
+\define{\u{x}}{\underline{\x}}
+\define{\color{x}{y}}{\textcolor{\x}{\y}}
+\define{\abbr{x}{y}}{\y\footnote{\x}}
+\define{\relativeSizeImage{text}{percentage}{path}}{\begin{figure}[htbp]\centering\includegraphics[width=\percentage\linewidth]{\path}\caption{\text}\end{figure}}

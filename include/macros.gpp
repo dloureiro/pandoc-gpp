@@ -1,0 +1,10 @@
+\ifdef{HTML}
+\include{html.gpp}
+\endif
+\ifdef{LATEX}
+\include{latex.gpp}
+\endif
+\ifdef{PDF}
+\include{latex.gpp}
+\endif
+\define{\code{x}{y}}{\exec{python /Users/dloureiro/gits/pandoc-gpp/share/bin/includeFile.py \x \y}}
