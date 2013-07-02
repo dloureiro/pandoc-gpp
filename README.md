@@ -9,6 +9,10 @@
 
 The code is still evolving to cope with different type of limitations of the markdown specifications.
 
+# Limitations
+
+`pandoc-gpp` is able to manage only `html` and `pdf` output files.
+
 # License
 
 This software is licensed under the AGPL v3.0 License. See the `COPYING` file in the top distribution directory for the full license text.
