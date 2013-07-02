@@ -1,4 +1,4 @@
 \define{\u{x}}{<u>\x</u>}
 \define{\color{x}{y}}{<span style="color:'\x'">\y</span>}
 \define{\abbr{x}{y}}{<abbr title="\x">\y</abbr>}
-\define{\relativeSizeImage{text}{percentage}{path}}{<figure><img style="width:'\exec{python ../share/bin/evaluateExpression.py 100*\percentage}%'" src="\path"/><figcaption>\text</figcaption></figure>}
+\define{\relativeSizeImage{text}{percentage}{path}}{<figure><img style="width:'\exec{python $PANDOC_GPP_PATH/share/bin/evaluateExpression.py 100*\percentage}%'" src="\path"/><figcaption>\text</figcaption></figure>}
