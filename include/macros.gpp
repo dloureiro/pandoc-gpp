@@ -7,4 +7,5 @@
 \ifdef{PDF}
 \include{latex.gpp}
 \endif
-\define{\code{x}{y}}{\exec{python /Users/dloureiro/gits/pandoc-gpp/share/bin/includeFile.py \x \y}}
+\define{\code{x}{y}}{\exec{python $PANDOC_GPP_PATH/share/bin/includeFile.py \x \y}}
+\define{\tabular{title}{data}}{\exec{python $PANDOC_GPP_PATH/share/bin/generate_tabular.py \data \title}}
