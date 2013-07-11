@@ -1,17 +1,19 @@
 # pandoc-gpp
 
-`pandoc-gpp` is a wrapper aroung `pandoc` and `gpp` allowing pandoc users to :
+`pandoc-gpp` is a wrapper aroung `pandoc` and `gpp` allowing pandoc users who want to go from markdown to pdf/html to :
 
- * include files 
+ * include files
  * add missing features : underline, color
  * include code directly
  * include images with specific ratio
+ * include graphs
+ * include tables based on csv files
 
 The code is still evolving to cope with different type of limitations of the markdown specifications.
 
 # Limitations
 
-`pandoc-gpp` is able to manage only `html` and `pdf` output files.
+`pandoc-gpp` is able to manage only `markdown` input files and `html` and `pdf` output files.
 
 # License
 
