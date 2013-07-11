@@ -13,7 +13,7 @@ The code is still evolving to cope with different type of limitations of the mar
 
 # Limitations
 
-`pandoc-gpp` is able to manage only `markdown` input files and `html` and `pdf` output files.
+`pandoc-gpp` is able to manage only `markdown` input files and html` and `pdf` output files.
 
 # License
 
