@@ -1,6 +1,6 @@
 from setuptools import setup
 setup(name='pandoc-gpp',
-      version='1.0',
+      version='0.2',
       scripts=['bin/pandoc-gpp'],
       data_files=[('include', ['include/macros.gpp', 'include/html.gpp', 'include/latex.gpp']),
       ('share/bin', ['share/bin/evaluateExpression.py','share/bin/generate_tabular.py', 'share/bin/generate_graph.py', 'share/bin/includeFile.py']),
