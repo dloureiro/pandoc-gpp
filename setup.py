@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 setup(name='pandoc-gpp',
       version='1.0',
       scripts=['bin/pandoc-gpp'],
@@ -9,5 +9,5 @@ setup(name='pandoc-gpp',
       author='David Loureiro',
       author_email='david.loureiro1@gmail.com',
       url='https://github.com/dloureiro/pandoc-gpp',
-      requires=["pygal (>=1.0.0)", "CairoSVG (>=0.5)", "cssselect (>0.8)"]
+      install_requires=["pygal (>=1.0.0)", "CairoSVG (>=0.5)", "cssselect (>0.8)"]
       )
