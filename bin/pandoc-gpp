@@ -10,6 +10,9 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 def is_exe(fpath):
+    """
+
+    """
     return os.path.isfile(fpath) and os.access(fpath, os.X_OK)
 
 def which(program):
@@ -37,10 +40,10 @@ def getext(filename):
 def compile(output_type, input_file, pandoc_options):
 
     macros_file = os.path.dirname(__file__) + "/../include/macros.gpp"
-    print os.path.dirname(__file__) + "/.."
+    #print os.path.dirname(__file__) + "/.."
     command = "export PANDOC_GPP_PATH="+ os.path.dirname(__file__) + "/..;" +" gpp --include "+ macros_file +" -x -D"+output_type.upper()+"=1 -T "+ input_file  +" | pandoc " + pandoc_options
 
-    print "executing command : " + command
+    #print "executing command : " + command
     os.chdir(os.path.abspath(os.getcwd()))
     try :
         output = subprocess.check_output(command,stderr=subprocess.STDOUT,shell=True)
@@ -89,6 +92,12 @@ if __name__ == '__main__':
     pandoc_path = which("pandoc")
     gpp_path = which("gpp")
     if not pandoc_path or not gpp_path :
-        print "pandoc and gpp executable must be in the path to be used by pandoc-gpp!"
+        message = """pandoc and gpp executable must be in the path to be used by pandoc-gpp!
+
+ - pandoc is available here : http://johnmacfarlane.net/pandoc/ (installing section)
+
+ - gpp sources are available here : https://github.com/dloureiro/gpp
+"""
+        print message
         exit()
     main()
