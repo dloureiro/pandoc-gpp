@@ -39,16 +39,16 @@ def compile(output_type, input_file, pandoc_options, logging):
 
     # Files are installed by setuptools one directory higher in the tree than th pandoc-gpp script
     macros_file = os.path.dirname(__file__) + "/../../include/macros.gpp"
-    if options[3] == True:
+    if logging == True:
             print "[log] : Path -> " + os.path.dirname(__file__) + "/.."
     command = "export PANDOC_GPP_PATH="+ os.path.dirname(__file__) + "/../..;" +" gpp --include "+ macros_file +" -x -D"+output_type.upper()+"=1 -T "+ input_file  +" | pandoc " + pandoc_options
 
-    if options[3] == True:
+    if logging == True:
         print "[log] : Command -> " + command
     os.chdir(os.path.abspath(os.getcwd()))
     try :
         output = subprocess.check_output(command,stderr=subprocess.STDOUT,shell=True)
-        if options[3] == True:
+        if logging == True:
             print "[log] : Output -> " + output
             print "[log] : No error found"
     except subprocess.CalledProcessError as err:
