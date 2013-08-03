@@ -93,7 +93,7 @@ def main():
     options = parseOptions()
 
     if options[3] == True:
-        print "[log] : Options -> " + options
+        print "[log] : Options -> " + str(options)
 
 
     compile(options[0], options[1], options[2], options[3])
