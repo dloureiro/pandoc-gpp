@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pandoc-gpp',
-      version='0.2.2',
+      version='0.2.3',
       scripts=['bin/pandoc-gpp'],
       data_files=[
             ('include', ['include/macros.gpp', 'include/html.gpp', 'include/latex.gpp']),
