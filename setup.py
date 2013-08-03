@@ -10,7 +10,7 @@ setup(name='pandoc-gpp',
       author='David Loureiro',
       author_email='david.loureiro1@gmail.com',
       url='https://github.com/dloureiro/pandoc-gpp',
-      install_requires=["pygal>=1.0.0", "CairoSVG>=0.5", "cssselect"]
+      install_requires=["pygal>=1.0.0", "CairoSVG>=0.5", "cssselect"],
       classifiers=[
       'Development Status :: 3 - Alpha',
       'Environment :: Console',
