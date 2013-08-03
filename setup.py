@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pandoc-gpp',
-      version='0.2.3',
+      version='0.2.4',
       scripts=['bin/pandoc-gpp'],
       data_files=[
             ('include', ['include/macros.gpp', 'include/html.gpp', 'include/latex.gpp']),
@@ -12,7 +12,7 @@ setup(name='pandoc-gpp',
       author='David Loureiro',
       author_email='david.loureiro1@gmail.com',
       url='https://github.com/dloureiro/pandoc-gpp',
-      install_requires=["pygal>=1.0.0", "CairoSVG>=0.5", "cssselect"],
+      install_requires=["pygal>=1.0.0", "CairoSVG>=0.5", "cssselect", "tinycss"],
       classifiers=[
       'Development Status :: 3 - Alpha',
       'Environment :: Console',
