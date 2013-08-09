@@ -33,7 +33,7 @@ To install `pandoc-gpp`, simply do :
 
 ```
 $ sudo python setup.py install
-``
+```
 
 # Limitations
 
