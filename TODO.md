@@ -1,4 +1,5 @@
 * [ ] Add other output formats
+* [X] Add support of epub format (@2cc5f74717)
 * [ ] Add tests
 * [ ] Add documentation about available commands
 * [ ] Rearrange the way macros are handled
