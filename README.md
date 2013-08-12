@@ -37,7 +37,9 @@ $ sudo python setup.py install
 
 # Limitations
 
-`pandoc-gpp` is able to manage only `markdown` input files and html` and `pdf` output files.
+`pandoc-gpp` does provide several macros that are available for some input formats and some output formats.
+It is mainly dedicated to markdown as input format and HTML/EPUB/LATEX/PDF for output formats.
+However, some macros only include code (so it's up to you to make included code match the current code) and others translate to markdown before being processed by ``pandoc``.
 
 # License
 
