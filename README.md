@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jekyll-Bootstrap
 
 The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
@@ -44,3 +45,9 @@ The master and gh-pages branch do not share the same ancestry. Please treat them
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+=======
+pandoc-gpp
+==========
+
+wrapper around pandoc and gpp to provide mode functionnalities around pandoc
+>>>>>>> 166be937e55af53ec8b460e795c4f3e9472a223b

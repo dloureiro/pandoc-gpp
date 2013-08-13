@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pandoc-gpp by dloureiro</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Pandoc-gpp</h1>
+        <p class="header">wrapper around pandoc and gpp to provide mode functionnalities around pandoc</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/dloureiro/pandoc-gpp/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/dloureiro/pandoc-gpp/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/dloureiro/pandoc-gpp">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/dloureiro">dloureiro</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="pandoc-gpp" class="anchor" href="#pandoc-gpp"><span class="octicon octicon-link"></span></a>pandoc-gpp</h1>
+
+<p><code>pandoc-gpp</code> is a wrapper aroung <code>pandoc</code> and <code>gpp</code> allowing pandoc users who want to go from markdown to pdf/html to :</p>
+
+<ul>
+<li>include files</li>
+<li>add missing features : underline, color</li>
+<li>include code directly</li>
+<li>include images with specific ratio</li>
+<li>include graphs</li>
+<li>include tables based on csv files</li>
+</ul><p>The code is still evolving to cope with different type of limitations of the markdown specifications.</p>
+
+<h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<h2>
+<a name="python-dependencies" class="anchor" href="#python-dependencies"><span class="octicon octicon-link"></span></a>Python dependencies</h2>
+
+<p><code>pandoc-gpp</code> depends on three external python packages :</p>
+
+<ul>
+<li>
+<strong>pygal</strong> (version &gt;= 1.0.0) for the generation of graphs in svg</li>
+<li>
+<strong>CairoSVG</strong> (version &gt;= 0.5) for the conversion of png from svg</li>
+<li>
+<strong>cssselect</strong> (version &gt;= 0.8) extra dependency for CairoSVG</li>
+</ul><p>These dependencies will be installed (if not present) during the installation of <code>pandoc-gpp</code>.</p>
+
+<h2>
+<a name="prerequisites" class="anchor" href="#prerequisites"><span class="octicon octicon-link"></span></a>Prerequisites</h2>
+
+<p>To use <code>pandoc-gpp</code> some packages are required : <strong>python</strong> (version 2.6 is ok). It's needed to run <code>pandoc-gpp</code> (which is written in python), <strong>python-dev</strong>, <strong>python-cairo</strong>, <strong>gpp</strong>, <strong>build-essential</strong> (you need a gcc compiler), <strong>libxslt1-dev</strong> (cairosvg needs lxml which needs xslt and libxml2)</p>
+
+<h2>
+<a name="installation-1" class="anchor" href="#installation-1"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>To install <code>pandoc-gpp</code>, simply do :</p>
+
+<pre><code>$ sudo python setup.py install
+</code></pre>
+
+<h1>
+<a name="limitations" class="anchor" href="#limitations"><span class="octicon octicon-link"></span></a>Limitations</h1>
+
+<p><code>pandoc-gpp</code> is able to manage only <code>markdown</code> input files and html<code>and</code>pdf` output files.</p>
+
+<h1>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h1>
+
+<p>This software is licensed under the AGPL v3.0 License. See the <code>COPYING</code> file in the top distribution directory for the full license text.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
