@@ -1,10 +1,8 @@
-Changelog
-=========
+# Changelog
 
-v0.2.5 (2013-08-06)
--------------------
+## v0.2.5 (2013-08-06)
 
-Changes \~\~\~\~\~\~\~
+### Changes
 
 -   Adding changelog. [David Loureiro]
 
@@ -13,8 +11,7 @@ Changes \~\~\~\~\~\~\~
 -   Adding md extension for improved visual on github pages. [David
     Loureiro]
 
-v0.2.4 (2013-08-03)
--------------------
+## v0.2.4 (2013-08-03)
 
 -   Adding tinycss dependency for correct conversion of charts to pdf.
     [David Loureiro]
