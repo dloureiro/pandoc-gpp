@@ -1,9 +1,0 @@
-\define{\u{x}}{\underline{\x}}
-\define{\color{x}{y}}{\textcolor{\x}{\y}}
-\define{\abbr{x}{y}}{\y\footnote{\x}}
-\define{\relativeSizeImage{text}{percentage}{path}}{\begin{figure}[htbp]\centering\includegraphics[width=\percentage\linewidth]{\path}\caption{\text}\end{figure}}
-\define{\graph{chart}{data}{title}{imgdir}{text}}{\begin{figure}[htbp]
-\includegraphics[width=\linewidth]{\exec{python $PANDOC_GPP_PATH/share/bin/generate_graph.py \chart \title \data \imgdir pdf}}
-\caption{\text}
-\end{figure}
-}

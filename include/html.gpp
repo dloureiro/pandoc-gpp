@@ -1,5 +1,0 @@
-\define{\u{x}}{<u>\x</u>}
-\define{\color{x}{y}}{<span style="color:'\x'">\y</span>}
-\define{\abbr{x}{y}}{<abbr title="\x">\y</abbr>}
-\define{\relativeSizeImage{text}{percentage}{path}}{<figure><img style="width:'\exec{python $PANDOC_GPP_PATH/share/bin/evaluateExpression.py 100*\percentage}%'" src="\path"/><figcaption>\text</figcaption></figure>}
-\define{\graph{chart}{data}{title}{imgdir}{text}}{<figure><img src="\exec{python $PANDOC_GPP_PATH/share/bin/generate_graph.py \chart \title \data \imgdir png}"/><figcaption>\text</figcaption></figure>}

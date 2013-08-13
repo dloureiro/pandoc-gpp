@@ -1,4 +1,0 @@
-recursive-include include *.gpp
-recursive-include share/bin *
-README.md
-CHANGELOG
