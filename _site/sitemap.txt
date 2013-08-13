@@ -1,0 +1,11 @@
+
+http://dloureiro.github.io/pandoc-gpp/atom.xml
+http://dloureiro.github.io/pandoc-gpp/documentation.html
+http://dloureiro.github.io/pandoc-gpp/download.html
+http://dloureiro.github.io/pandoc-gpp/history.html
+http://dloureiro.github.io/pandoc-gpp/index.html
+http://dloureiro.github.io/pandoc-gpp/issue-traking.html
+http://dloureiro.github.io/pandoc-gpp/license.html
+http://dloureiro.github.io/pandoc-gpp/pages.html
+http://dloureiro.github.io/pandoc-gpp/rss.xml
+http://dloureiro.github.io/pandoc-gpp/sitemap.txt

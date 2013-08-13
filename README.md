@@ -1,46 +1,46 @@
-# pandoc-gpp
+# Jekyll-Bootstrap
 
-`pandoc-gpp` is a wrapper aroung `pandoc` and `gpp` allowing pandoc users who want to go from markdown to pdf/html to :
+The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
 
- * include files
- * add missing features : underline, color
- * include code directly
- * include images with specific ratio
- * include graphs
- * include tables based on csv files
+## Usage
 
-The code is still evolving to cope with different type of limitations of the markdown specifications.
+For all usage and documentation please see: <http://jekyllbootstrap.com>
 
-# Installation
+## Version
 
-## Python dependencies
+0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
 
-`pandoc-gpp` depends on three external python packages :
+**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
+However, the actual API has not changed at all.
+You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
 
- * **pygal** (version >= 1.0.0) for the generation of graphs in svg
- * **CairoSVG** (version >= 0.5) for the conversion of png from svg
- * **cssselect** (version >= 0.8) extra dependency for CairoSVG
+## Contributing 
 
-These dependencies will be installed (if not present) during the installation of `pandoc-gpp`.
+This repository tracks 2 projects:
 
-## Prerequisites
+- **Jekyll-Bootstrap Framework.**  
+  The framework for which users should clone and build their blog on top of is available in the master branch.
+  
+  To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
+  This is very important as it allows me to accept your pull request without having to publish a public version release.
+  
+  Small, atomic Features, bugs, etc.   
+  Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.   
+  Please rebase as often as possible when working.   
+  Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
+  
+  For Big Features or major API extensions/edits:   
+  This is the one case where I'll accept pull-requests based off the master branch.
+  This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
+  Translation : it might take a bit longer so please be patient! (but sincerely thank you).
+ 
+- **Jekyll-Bootstrap Documentation Website.**    
+  The documentation website at <http://jekyllbootstrap.com> is maintained in the gh-pages branch.
+  Please fork and contribute documentation additions to this branch only.
 
-To use `pandoc-gpp` some packages are required : **python** (version 2.6 is ok). It's needed to run `pandoc-gpp` (which is written in python), **python-dev**, **python-cairo**, **gpp**, **build-essential** (you need a gcc compiler), **libxslt1-dev** (cairosvg needs lxml which needs xslt and libxml2)
+The master and gh-pages branch do not share the same ancestry. Please treat them as completely separate git repositories!
 
-## Installation
 
-To install `pandoc-gpp`, simply do :
+## License
 
-```
-$ sudo python setup.py install
-```
-
-# Limitations
-
-`pandoc-gpp` does provide several macros that are available for some input formats and some output formats.
-It is mainly dedicated to markdown as input format and HTML/EPUB/LATEX/PDF for output formats.
-However, some macros only include code (so it's up to you to make included code match the current code) and others translate to markdown before being processed by ``pandoc``.
-
-# License
-
-This software is licensed under the AGPL v3.0 License. See the `COPYING` file in the top distribution directory for the full license text.
+[MIT](http://opensource.org/licenses/MIT)
